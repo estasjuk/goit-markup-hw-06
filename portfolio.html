@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>Веб-студия</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
@@ -293,7 +300,7 @@
           </address>
         </div>
         <div class="foot-container">
-          <b class="join">присоединяйтесь</b>
+          <strong class="join">присоединяйтесь</strong>
           <ul class="footer-socials list-item">
             <li class="footer-social-item">
               <a href="" class="footer-social-link">
@@ -324,6 +331,20 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="foot-container">
+          <strong class="mailing">подписывайтесь на рассылку</strong>
+          <form class="mailing-form" name="mailing-form">
+            <input class="mailing-input" type="email" name="mailing-email" placeholder="E-mail" />
+            <div class="btn-wrap">
+              <button class="mailing-btn" type="submit">
+                Подписаться
+                <svg class="icon-send" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
