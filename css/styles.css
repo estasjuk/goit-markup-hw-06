@@ -548,13 +548,27 @@ body {
 
 .f-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   width: 1200px;
   align-items: baseline;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.foot-container-left {
+  margin-right: 70px;
+  width: 231px;
+}
+
+.foot-container-middle {
+  margin-right: 93px;
+  width: 206px;
+}
+
+.foot-container-right {
+  width: 570px;
 }
 
 .footer-socials {
@@ -796,7 +810,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -863,6 +877,7 @@ body {
 }
 
 .order-form-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -887,6 +902,7 @@ body {
 }
 
 .order-form-comment {
+  display: block;
   width: 100%;
   min-height: 120px;
   resize: none;
@@ -939,14 +955,17 @@ body {
   color: var(--text-color);
 }
 
+.condition-checkbox:focus-within + .condition-checkbox-label span {
+  border: 2px solid var(--active-hover-focus-current);
+}
+
 .condition-link {
   color: var(--active-hover-focus-current);
-  text-decoration-style: dotted;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .condition-link:hover,
-condition-link:focus {
+.condition-link:focus {
   color: var(--hover-btn);
 }
 
